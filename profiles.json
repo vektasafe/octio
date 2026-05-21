@@ -1,0 +1,70 @@
+{
+  "Google/Gmail": {
+    "protocol": "Google/Gmail",
+    "total_threats": 3,
+    "confirmed_threats": 1,
+    "high_risk": 2,
+    "severity_counts": {
+      "LOW": 0,
+      "MEDIUM": 1,
+      "HIGH": 2,
+      "CRITICAL": 0
+    },
+    "threat_types": [
+      "PHISHING"
+    ],
+    "domains": [
+      "live-join-gooqle-meet.4-c4.com",
+      "ecortbabylon.site",
+      "livemeetcall.xyz"
+    ],
+    "first_seen": "2026-05-21T00:28:52.349849+00:00",
+    "last_seen": "2026-05-21T00:28:58.258014+00:00",
+    "max_reputation_score": 306.0,
+    "risk_rating": "CRITICAL"
+  },
+  "Babylon Chain": {
+    "protocol": "Babylon Chain",
+    "total_threats": 1,
+    "confirmed_threats": 1,
+    "high_risk": 0,
+    "severity_counts": {
+      "LOW": 0,
+      "MEDIUM": 0,
+      "HIGH": 1,
+      "CRITICAL": 0
+    },
+    "threat_types": [
+      "PHISHING"
+    ],
+    "domains": [
+      "ecortbabylon.site"
+    ],
+    "first_seen": "2026-05-21T00:29:00.385766+00:00",
+    "last_seen": "2026-05-21T00:29:00.385766+00:00",
+    "max_reputation_score": 306.0,
+    "risk_rating": "HIGH"
+  },
+  "Ledger": {
+    "protocol": "Ledger",
+    "total_threats": 1,
+    "confirmed_threats": 1,
+    "high_risk": 0,
+    "severity_counts": {
+      "LOW": 0,
+      "MEDIUM": 0,
+      "HIGH": 1,
+      "CRITICAL": 0
+    },
+    "threat_types": [
+      "PHISHING"
+    ],
+    "domains": [
+      "ecortbabylon.site"
+    ],
+    "first_seen": "2026-05-21T00:29:04.383482+00:00",
+    "last_seen": "2026-05-21T00:29:04.383482+00:00",
+    "max_reputation_score": 306.0,
+    "risk_rating": "HIGH"
+  }
+}
