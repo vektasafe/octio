@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-05-21T00:57:03.873924+00:00",
+  "domains_analysed": 8,
+  "protocols_analysed": 3,
+  "prediction": {
+    "threat_level": "CRITICAL",
+    "escalating_campaigns": [
+      {
+        "campaign": "Google/Gmail Phishing & Credential Harvesting",
+        "evidence": "The 'Google/Gmail' protocol has a 'CRITICAL' risk rating with the highest 'max_reputation_score' (306.0) and 3 domains flagged. 'ecortbabylon.site' (CONFIRMED_THREAT, score 306) is likely a central component of this, alongside 'live-join-gooqle-meet.4-c4.com' and potentially others impersonating google.",
+        "peak_window": "24h",
+        "confidence": "HIGH"
+      },
+      {
+        "campaign": "Babylon Chain/Ledger Focused Phishing",
+        "evidence": "Both Babylon Chain and Ledger have a 'HIGH' risk rating tied to a single domain with a confirmed threat level and a high reputation score.  The similarity in scores suggests a coordinated attack, potentially leveraging a shared infrastructure or playbook.",
+        "peak_window": "48h",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "predicted_next_targets": [
+      {
+        "target": "Microsoft/Outlook",
+        "reasoning": "Given the success of Google/Gmail impersonation, attackers will likely expand to other major email providers. Microsoft/Outlook is a logical next step due to its large user base and common use in enterprise environments.",
+        "risk": "CRITICAL"
+      },
+      {
+        "target": "MetaMask",
+        "reasoning": "MetaMask is a core infrastructure piece for many DeFi users and a frequent target of phishing attacks, and its popularity provides a wide attack surface.",
+        "risk": "HIGH"
+      }
+    ],
+    "dominant_attack_vector": "Phishing via URL impersonation, leveraging lookalike domains to steal user credentials and seed phrases. Focus seems to be on impersonating login pages and popular services like Google Meet.",
+    "early_warning_signals": [
+      "High reputation scores for newly observed domains (particularly over 60)",
+      "Domains containing misspellings or subtle character replacements of popular brands (e.g., 'gooqle' instead of 'google', 'netfliix' instead of 'netflix')",
+      "A concentration of malicious activity targeting a single protocol or platform (Google/Gmail)",
+      "Multiple domains sharing similar infrastructure or hosting providers (indicated by similar 'first_seen' and 'last_seen' timestamps)"
+    ],
+    "recommended_actions": [
+      "Immediately alert users about the ongoing Google/Gmail phishing campaign, detailing the tactics used and providing links to legitimate login pages.",
+      "Implement enhanced domain name protection measures, actively monitoring for and blocking newly registered domains that closely resemble your brand.",
+      "Deploy browser extension warnings for users attempting to access known malicious or suspicious domains.",
+      "Increase user education regarding phishing attacks, emphasizing the importance of verifying URLs and being wary of unsolicited communications."
+    ],
+    "analyst_advisory": "The current threat landscape demonstrates a rapid escalation in phishing campaigns targeting high-value protocols and platforms. Attackers are demonstrating sophistication in domain name spoofing and a willingness to rapidly adapt their tactics. Proactive threat intelligence and user education are crucial for mitigating risk. Monitor closely for new domain registrations and anomalous network activity."
+  }
+}
